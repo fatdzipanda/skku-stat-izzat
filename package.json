@@ -1,0 +1,25 @@
+{
+  "name": "skku-stat-izzat",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fatdzipanda/skku-stat-izzat.git"
+  },
+  "bin": {
+    "stat": "./main.js"
+  },
+  "author": "Fatdzirul Izzat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fatdzipanda/skku-stat-izzat/issues"
+  },
+  "homepage": "https://github.com/fatdzipanda/skku-stat-izzat#readme",
+  "devDependencies": {
+    "jest": "^29.2.1"
+  }
+}
