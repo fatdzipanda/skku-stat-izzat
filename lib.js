@@ -30,6 +30,7 @@ function iqr(numbers){
 }
 
 function outlier(numbers){
+    original = numbers.slice();
     midIndex = Math.floor(numbers.length / 2);
     sorting = numbers.sort((a,b) => a-b);
     if (numbers.length % 2 == 0)
@@ -41,11 +42,11 @@ function outlier(numbers){
         Q3 = sorting.slice(midIndex+1);
     }
 
-    for (let i = 0; i < numbers.length; i++){  
-        if(numbers[i] < (med(Q1) - (1.5 * iqr(numbers)))){
-            console.log(numbers[i]);
-        } else if(numbers[i] > (med(Q3) + (1.5 * iqr(numbers)))){
-            console.log(numbers[i]);
+    for (let i = 0; i < original.length; i++){  
+        if(original[i] < (med(Q1) - (1.5 * iqr(numbers)))){
+            console.log(original[i]);
+        } else if(original[i] > (med(Q3) + (1.5 * iqr(numbers)))){
+            console.log(original[i]);
         }
     }
 
